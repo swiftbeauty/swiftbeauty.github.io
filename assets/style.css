@@ -72,7 +72,7 @@ body {
 .countdown {
     display: flex;
     justify-content: center;
-    margin: 0 1em 1em 1em;
+    margin: 0 1em 0 1em;
     font-size: 6rem;
     text-align: center;
     font-family: "Optima LT W05 Roman";
@@ -183,6 +183,6 @@ body {
     font-weight: 500;
 }
 
-.mt-2 {
-    margin-top: 2em;
+.mt-1 {
+    margin-top: 1em;
 }
