@@ -20,7 +20,8 @@
 
         <div>
             <div id="mc_embed_signup" class="form">
-                <p class="par">Please enter your details to register for Allergan's webinar event <br>featuring Dr. Leonie Schelke and
+                <p class="par">Please enter your details to register for Allergan's webinar event <br>featuring Dr.
+                    Leonie Schelke and
                     Dr. Arthur Swift.</p>
                 <form
                     action="https://swiftbeauty.us18.list-manage.com/subscribe/post?u=e8fb35e9ad77bd2bc8bb87d65&amp;id=a35bebf1fa"
@@ -30,12 +31,24 @@
                         <div class="mc-field-group">
                             <label class="form__label" for="mce-FNAME">NAME*</label>
                             <br>
-                            <input type="text" value="" placeholder="First" onfocus="this.placeholder=''" onblur="this.placeholder='First'" name="FNAME" class="required fname" id="mce-FNAME" required>
-                            <input type="text" value="" placeholder="Last" onfocus="this.placeholder=''" onblur="this.placeholder='Last'" name="LNAME" class="required lname" id="mce-LNAME" required>
+                            <input type="text" value="" placeholder="First" onfocus="this.placeholder=''"
+                                onblur="this.placeholder='First'" name="FNAME" class="required fname" id="mce-FNAME"
+                                required>
+                            <input type="text" value="" placeholder="Last" onfocus="this.placeholder=''"
+                                onblur="this.placeholder='Last'" name="LNAME" class="required lname" id="mce-LNAME"
+                                required>
                             <br>
                             <label class="form__label" for="mce-EMAIL">EMAIL* </label>
                             <br>
-                            <input type="email" value="" name="EMAIL" placeholder="Email" onfocus="this.placeholder=''" onblur="this.placeholder='Email'" class="required email" id="mce-EMAIL" required>
+                            <input type="email" value="" name="EMAIL" placeholder="Email" onfocus="this.placeholder=''"
+                                onblur="this.placeholder='Email'" class="required email" id="mce-EMAIL" required>
+                        </div>
+                        <div class="mc-field-group input-group" style="display: none;">
+                            <strong>Websites </strong>
+                            <ul>
+                                <li><input type="radio" value="1" name="group[6810]" id="mce-group[6810]-6810-0"
+                                        checked><label for="mce-group[6810]-6810-0">allergan/swift beauty</label></li>
+                            </ul>
                         </div>
                         <div id="mce-responses" class="clear">
                             <div class="response" id="mce-error-response" style="display:none"></div>
@@ -56,7 +69,7 @@
         <!-- We would like for the countdown to be moving towards the event date of 11 am EST on Saturday, September 26 -->
 
         <div class="">
-           <h1 class="h2 font-weight-l soon">COMING SOON</h1>    
+            <h1 class="h2 font-weight-l soon">COMING SOON</h1>
             <div class="countdown">
                 <div>
                     <span id="countdownDays"></span>
@@ -92,12 +105,12 @@
         }(jQuery)); var $mcj = jQuery.noConflict(true);
 
         var finalDate = new Date("Sept 26, 2020 11:00:00").getTime();
-        
-        var countdown = setInterval(function() {
+
+        var countdown = setInterval(function () {
             var now = new Date().getTime();
             var timedifference = finalDate - now;
 
-            var days = Math.floor(timedifference / (1000 * 60 * 60 *24));
+            var days = Math.floor(timedifference / (1000 * 60 * 60 * 24));
             var hours = Math.floor(timedifference % (1000 * 60 * 60 * 24) / (1000 * 60 * 60));
             var minutes = Math.floor(timedifference % (1000 * 60 * 60) / (1000 * 60));
             var seconds = Math.floor(timedifference % (1000 * 60) / 1000);
