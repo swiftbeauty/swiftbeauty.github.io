@@ -53,6 +53,10 @@ body {
     font-weight: 300;
     text-align: center;
     overflow: scroll;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .container {
@@ -107,7 +111,7 @@ body {
     width: 45%;
     background-color: transparent !important;
     height: 30px;
-    border: 1px solid white;
+    border: 2px solid white;
     margin-bottom: 20px;
     margin-top: 10px;
     color: white;
@@ -123,7 +127,7 @@ body {
     width: 45%;
     background-color: transparent !important;
     height: 30px;
-    border: 1px solid white;
+    border: 2px solid white;
     margin-bottom: 20px;
     margin-top: 10px;
     color: white;
@@ -134,7 +138,7 @@ body {
     width: 97%;
     background-color: transparent !important;
     height: 30px;
-    border: 1px solid white;
+    border: 2px solid white;
     margin-bottom: 40px;
     margin-top: 10px;
     color: white;
@@ -148,10 +152,19 @@ body {
     width: 185px;
     font-size: 18px !important;
     letter-spacing: 3px !important;
-    border: 1px solid white;
     color: white;
     margin-bottom: 50px;
     margin-top: 10px;
+    font-weight: bold;
+    border: 2px solid white;
+}
+
+div.mce_inline_error {
+     display: none !important;
+}
+
+.form__register:hover {
+    cursor: pointer;
 }
 
 .form__label {

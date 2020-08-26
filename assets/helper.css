@@ -33,6 +33,10 @@
     .fname {
         margin-right: 0.5em;
     }
+
+    .countdown p {
+        letter-spacing: 0.3em;
+    }
 }
 
 @media (max-width: 570.98px) {
@@ -91,5 +95,33 @@
 
     .countdown p {
         letter-spacing: 0;
+    }
+}
+
+@media (min-width: 321px) and (max-width: 384px) {
+    .email {
+        width: 91%;
+    }
+
+    .fname {
+        width: 42%;
+    }
+
+    .lname {
+       width: 42%;
+    }
+}
+
+@media (min-width: 571px) and (max-width: 642px) {
+    .email {
+        width: 95%;
+    }
+
+    .fname {
+        width: 43%;
+    }
+
+    .lname {
+        width: 43%;
     }
 }
