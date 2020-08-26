@@ -103,37 +103,42 @@ body {
 }
 
 .fname {
-    margin-right: 35px;
-    width: 46%;
+    margin-right: 30px;
+    width: 45%;
     background-color: transparent !important;
     height: 30px;
     border: 1px solid white;
     margin-bottom: 20px;
     margin-top: 10px;
+    color: white;
+    padding-left: 10px;
 }
 
 ::placeholder {
     color: lightgray;
     font-size: 1.125rem;
-    padding-left: 10px;
 }
 
 .lname {
-    width: 46%;
+    width: 45%;
     background-color: transparent !important;
     height: 30px;
     border: 1px solid white;
     margin-bottom: 20px;
     margin-top: 10px;
+    color: white;
+    padding-left: 10px;
 }
 
 .email {
-    width: 99%;
+    width: 97%;
     background-color: transparent !important;
     height: 30px;
     border: 1px solid white;
     margin-bottom: 40px;
     margin-top: 10px;
+    color: white;
+    padding-left: 10px;
 }
 
 .form__register {
