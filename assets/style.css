@@ -72,7 +72,7 @@ body {
 .countdown {
     display: flex;
     justify-content: center;
-    margin: 0 1em 0 1em;
+    margin: 0 1em 0.5em 1em;
     font-size: 6rem;
     text-align: center;
     font-family: "Optima LT W05 Roman";
@@ -155,6 +155,10 @@ body {
     letter-spacing: 0.2em;
 }
 
+#mc_embed_signup_scroll {
+    margin-top: 30px;
+}
+
 .soon {
     font-family: "Optima LT W05 Roman";
 }
@@ -184,5 +188,5 @@ body {
 }
 
 .mt-1 {
-    margin-top: 1em;
+    margin-top: 0.8em;
 }
