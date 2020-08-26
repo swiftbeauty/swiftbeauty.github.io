@@ -1,37 +1,18 @@
 /* Large devices (desktops, less than 1200px) */
 @media (max-width: 1199.98px) {
-    .fname {
-        margin-right: 20px;
-    }
 
-    .email {
-        width: 96%;
-    }
 }
 
 
 /* Medium devices (tablets, less than 992px) */
 @media (max-width: 991.98px) {
-    .fname {
-        margin-right: 0.6em;
-    }
 
-    .email {
-        width: 96%;
-    }
 }
 
 /* Small devices (landscape phones, less than 768px) */
 @media (max-width: 767.98px) {
-    .fname {
-        width: 44%;
-    }
     .countdown > div {
         min-width: 1.4em;
-    }
-
-    .fname {
-        margin-right: 0.5em;
     }
 
     .countdown p {
@@ -66,10 +47,6 @@
         font-size: 1.2em;
     }
 
-    .email {
-        width: 97%;
-    }
-
     .form__label {
         font-size: 1em;
     }
@@ -85,43 +62,11 @@
         font-size: 2em;
     }
 
-    .fname {
-        margin-right: 1px;
-    }
-
     .countdown {
         font-size: 3em;
     }
 
     .countdown p {
         letter-spacing: 0;
-    }
-}
-
-@media (min-width: 321px) and (max-width: 384px) {
-    .email {
-        width: 91%;
-    }
-
-    .fname {
-        width: 42%;
-    }
-
-    .lname {
-       width: 42%;
-    }
-}
-
-@media (min-width: 571px) and (max-width: 642px) {
-    .email {
-        width: 95%;
-    }
-
-    .fname {
-        width: 43%;
-    }
-
-    .lname {
-        width: 43%;
     }
 }

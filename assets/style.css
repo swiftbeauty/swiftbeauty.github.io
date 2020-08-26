@@ -47,7 +47,7 @@ html {
 }
 
 body {
-    background: radial-gradient(circle, rgba(117,140,211,1) 0%, rgba(84,43,151,1) 100%);
+    background: radial-gradient(circle, rgba(83,127,197,1) 0%, rgba(33,68,136,1) 100%); 
     color: white;
     font-family: "Gotham", sans-serif;
     font-weight: 300;
@@ -63,6 +63,7 @@ body {
     width: 90%;
     max-width: 1095px;
     margin: 0 auto;
+    height: 100%;
 }
 
 .mc-field-group {
@@ -107,8 +108,7 @@ body {
 }
 
 .fname {
-    margin-right: 30px;
-    width: 45%;
+    width: 44%;
     background-color: transparent !important;
     height: 30px;
     border: 2px solid white;
@@ -116,6 +116,7 @@ body {
     margin-top: 10px;
     color: white;
     padding-left: 10px;
+    margin-right: 0.5em;
 }
 
 ::placeholder {
@@ -124,7 +125,7 @@ body {
 }
 
 .lname {
-    width: 45%;
+    width: 44%;
     background-color: transparent !important;
     height: 30px;
     border: 2px solid white;
@@ -135,7 +136,7 @@ body {
 }
 
 .email {
-    width: 97%;
+    width: 100%;
     background-color: transparent !important;
     height: 30px;
     border: 2px solid white;
@@ -143,6 +144,19 @@ body {
     margin-top: 10px;
     color: white;
     padding-left: 10px;
+}
+
+.input-half-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.input-half {
+    width: 48%;
+}
+
+.input-half input {
+    width: 100%;
 }
 
 .form__register {
@@ -189,12 +203,19 @@ div.mce_inline_error {
 }
 
 .h2 {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
+    letter-spacing: 4px;
+}
+
+.s2 {
+    font-size: 1.8rem;
     letter-spacing: 4px;
 }
 
 .par {
     letter-spacing: 3px;
+    font-size: 1.3rem;
+    margin-top: 30px;
 }
 
 .font-weight-l {
