@@ -1,5 +1,5 @@
 html {
-    font-size: 14px;
+    font-size: 13px;
 }
 
 @font-face {
@@ -188,6 +188,6 @@ body {
 }
 
 .my-1 {
-    margin-top: 0.8em;
+    margin-top: 1em;
     margin-bottom: 8px;
 }
