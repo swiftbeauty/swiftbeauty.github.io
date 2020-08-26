@@ -1,0 +1,188 @@
+html {
+    font-size: 16px;
+}
+
+@font-face {
+  font-family: "Gotham 300";
+  src: url("fonts/Gotham-Light.eot");
+  src: url("fonts/Gotham-Light.eot?#iefix") format("embedded-opentype");
+  src: url("fonts/Gotham-Light.woff2") format("woff2");
+  src: url("fonts/Gotham-Light.woff") format("woff");
+  src: url("fonts/Gotham-Light.ttf") format("truetype");
+  src: url("fonts/Gotham-Light.svg#Gotham-Light") format("svg");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gotham 400";
+  src: url("fonts/Gotham-Book.eot");
+  src:
+    url("fonts/Gotham-Book.eot?#iefix") format("embedded-opentype"),
+    url("fonts/Gotham-Book.woff2") format("woff2"),
+    url("fonts/Gotham-Book.woff") format("woff"),
+    url("fonts/Gotham-Book.ttf") format("truetype"),
+    url("fonts/Gotham-Book.svg#Gotham-Book") format("svg");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gotham 500";
+  src: url("fonts/Gotham-Medium.eot");
+  src:
+    url("fonts/Gotham-Medium.eot?#iefix") format("embedded-opentype"),
+    url("fonts/Gotham-Medium.woff2") format("woff2"),
+    url("fonts/Gotham-Medium.woff") format("woff"),
+    url("fonts/Gotham-Medium.ttf") format("truetype"),
+    url("fonts/Gotham-Medium.svg#Gotham-Medium") format("svg");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face{
+        font-family:"Optima LT W05 Roman";
+        src: url("fonts/e843ecbd-4830-44a4-a280-c2500c9d3fdb.woff2") format("woff2");
+        src: url("fonts/fc030506-195b-41d1-b305-50c3a5ebd5a2.woff") format("woff");
+}
+
+body {
+    background: radial-gradient(circle, rgba(117,140,211,1) 0%, rgba(84,43,151,1) 100%);
+    color: white;
+    font-family: "Gotham", sans-serif;
+    font-weight: 300;
+    text-align: center;
+    overflow: scroll;
+}
+
+.container {
+    width: 90%;
+    max-width: 1095px;
+    margin: 0 auto;
+}
+
+.mc-field-group {
+    text-align: left;
+}
+
+#mc_embed_signup_scroll {
+    margin-top: 40px;
+}
+
+.countdown {
+    display: flex;
+    justify-content: center;
+    margin: 0 1em 1em 1em;
+    font-size: 6rem;
+    text-align: center;
+    font-family: "Optima LT W05 Roman";
+}
+
+.countdown > div {
+    min-width: 2em;
+}
+    .countdown > div:first-child {
+        border: none;
+    }
+
+.countdown span {
+    margin-bottom: 0;
+    margin-top: 60px;
+}
+
+.countdown p {
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.5em;
+    margin: 0;
+}
+
+.form {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.fname {
+    margin-right: 35px;
+    width: 46%;
+    background-color: transparent !important;
+    height: 30px;
+    border: 1px solid white;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+::placeholder {
+    color: lightgray;
+    font-size: 1.125rem;
+    padding-left: 10px;
+}
+
+.lname {
+    width: 46%;
+    background-color: transparent !important;
+    height: 30px;
+    border: 1px solid white;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.email {
+    width: 99%;
+    background-color: transparent !important;
+    height: 30px;
+    border: 1px solid white;
+    margin-bottom: 40px;
+    margin-top: 10px;
+}
+
+.form__register {
+    text-align: center !important;
+    background-color: transparent;
+    height: 35px;
+    width: 185px;
+    font-size: 18px !important;
+    letter-spacing: 3px !important;
+    border: 1px solid white;
+    color: white;
+    margin-bottom: 50px;
+    margin-top: 10px;
+}
+
+.form__label {
+    font-family: "Gotham 400";
+    font-size: 1.25em;
+    letter-spacing: 0.2em;
+}
+
+.soon {
+    font-family: "Optima LT W05 Roman";
+}
+
+/* Utilities */
+.h1 {
+    font-size: 2.5rem;
+    letter-spacing: 6px;
+    font-family: "Optima LT W05 Roman";
+}
+
+.h2 {
+    font-size: 1.5rem;
+    letter-spacing: 4px;
+}
+
+.par {
+    letter-spacing: 3px;
+}
+
+.font-weight-l {
+    font-weight: 300;
+}
+
+.font-weight-m {
+    font-weight: 500;
+}
+
+.mt-2 {
+    margin-top: 2em;
+}

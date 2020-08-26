@@ -1,0 +1,92 @@
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+    .fname {
+        margin-right: 25px;
+    }
+
+    .email {
+        width: 98%;
+    }
+}
+
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+    .fname {
+        margin-right: 0.8em;
+    }
+
+    .email {
+        width: 97%;
+    }
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+    .countdown > div {
+        min-width: 1.4em;
+    }
+
+    .fname {
+        margin-right: 0.5em;
+    }
+}
+
+@media (max-width: 570.98px) {
+    .form {
+        width: 100%;
+    }
+
+    .h1 {
+        letter-spacing: initial;
+    }
+
+    .countdown {
+        font-size: 4em;
+    }
+
+    .countdown p {
+        letter-spacing: 0;
+    }
+}
+
+@media (max-width: 425.98px) {
+    .h1 {
+        font-size: 2em;
+    }
+
+    .h2 {
+        font-size: 1.2em;
+    }
+
+    .email {
+        width: 97%;
+    }
+
+    .form__label {
+        font-size: 1em;
+    }
+    
+}
+
+@media (max-width: 320.98px) {
+    .countdown > div {
+        min-width: 1.5em;
+    }
+
+    .h1 {
+        font-size: 2em;
+    }
+
+    .fname {
+        margin-right: 1px;
+    }
+
+    .countdown {
+        font-size: 3em;
+    }
+
+    .countdown p {
+        letter-spacing: 0;
+    }
+}
