@@ -66,6 +66,14 @@ body {
     height: 100%;
 }
 
+.video {
+    padding: 3rem 0;
+}
+.video video {
+    max-width: 100%;
+    height: auto;
+}
+
 .mc-field-group {
     text-align: left;
 }
@@ -73,7 +81,9 @@ body {
 #mc_embed_signup_scroll {
     margin-top: 40px;
 }
-
+.countdown-wrapper {
+    padding-bottom: 3rem;
+}
 .countdown {
     display: flex;
     justify-content: center;
@@ -171,6 +181,26 @@ body {
     margin-top: 10px;
     font-weight: bold;
     border: 2px solid white;
+}
+.anchor {
+    padding: 3rem 0;
+}
+
+.anchor-to-form {
+    display: block;
+    margin: auto;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: 2px solid white;
+    text-align: center !important;
+    background-color: transparent;
+    height: 35px;
+    width: 185px;
+    font-size: 18px !important;
+    line-height: 35px !important;
+    letter-spacing: 3px !important;
+    color: white;
 }
 
 div.mce_inline_error {
