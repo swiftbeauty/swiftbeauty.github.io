@@ -66,12 +66,44 @@ body {
     height: 100%;
 }
 
+.top-wrap {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.bottom-wrap {
+    min-height: 100vh;
+    padding-top: 3rem;
+}
+
 .video {
     padding: 3rem 0;
+    flex-grow: 1;
+    position: relative;
 }
 .video video {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 50%;
+    height: 100%;
+    width: auto;
     max-width: 100%;
-    height: auto;
+    transform: translateX(50%);
+}
+
+@media all and (max-width: 600px){
+    .video {
+        flex-grow: 0;
+    }
+
+    .video video {
+        position: relative;
+        width: 100%;
+        height: auto;
+    }
 }
 
 .mc-field-group {
