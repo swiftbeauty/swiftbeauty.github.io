@@ -66,6 +66,10 @@ body {
     height: 100%;
 }
 
+.date-event {
+    margin-bottom: 2rem;
+}
+
 .top-wrap {
     min-height: 100vh;
     display: flex;
