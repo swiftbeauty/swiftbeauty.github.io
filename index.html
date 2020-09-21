@@ -19,8 +19,8 @@
         window.location.protocol = "https";
     }
 
-    const finalDate = new Date("Sept 26, 2020 11:00:00").getTime();
-    // const finalDate = new Date("Sept 21, 2020 14:45:00").getTime();
+    const finalDate = new Date("Sept 26, 2020 08:00:00").getTime();
+
     const now = new Date().getTime();
     let timedifference = finalDate - now;
 
@@ -82,12 +82,12 @@
                         <br>
                         <div class="input-half-wrapper">
                             <div class="input-half">
-                                <input type="text" value="quentin" placeholder="First" onfocus="this.placeholder=''"
+                                <input type="text" value="" placeholder="First" onfocus="this.placeholder=''"
                                        onblur="this.placeholder='First'" name="FNAME" class="fname required"
                                        id="mce-FNAME">
                             </div>
                             <div class="input-half">
-                                <input type="text" value="petitjean" placeholder="Last" onfocus="this.placeholder=''"
+                                <input type="text" value="" placeholder="Last" onfocus="this.placeholder=''"
                                        onblur="this.placeholder='Last'" name="LNAME" class="required lname"
                                        id="mce-LNAME">
                             </div>
@@ -97,7 +97,7 @@
                     <div class="mc-field-group">
                         <label class="form__label" for="mce-EMAIL">EMAIL* </label>
                         <br>
-                        <input type="email" value="quentin@codecomment.io" name="EMAIL" placeholder="Email" onfocus="this.placeholder=''"
+                        <input type="email" value="" name="EMAIL" placeholder="Email" onfocus="this.placeholder=''"
                                onblur="this.placeholder='Email'" class="email required" id="mce-EMAIL">
                     </div>
                     <div class="mc-field-group input-group">
@@ -158,33 +158,12 @@
 </div>
 
 <script>
-    // var finalDate = new Date("Sept 26, 2020 11:00:00").getTime();
-    //
-    // var countdown = setInterval(function () {
-    //     var now = new Date().getTime();
-    //     var timedifference = finalDate - now;
-    //
-    //     var days = Math.floor(timedifference / (1000 * 60 * 60 * 24));
-    //     var hours = Math.floor(timedifference % (1000 * 60 * 60 * 24) / (1000 * 60 * 60));
-    //     var minutes = Math.floor(timedifference % (1000 * 60 * 60) / (1000 * 60));
-    //     var seconds = Math.floor(timedifference % (1000 * 60) / 1000);
-    //
-    //     document.getElementById("countdownDays").innerHTML = days;
-    //     document.getElementById("countdownHours").innerHTML = hours;
-    //     document.getElementById("countdownMinutes").innerHTML = minutes;
-    //     document.getElementById("countdownSeconds").innerHTML = seconds;
-    //
-    //     if (timedifference < 0)
-    //         clearInterval(countdown);
-    //
-    // }, 1000);
-
     var observer = new MutationObserver(function(mutations) {
         var radio = $('input[name="group[36740]"]:checked').val();
         var url = '/thank-you.html'
-        document.cookie = 'opt-in=no; expires=session';
+        document.cookie = 'opt-in=no; expires=Sept 27, 2020 08:00:00';
         if(radio == '1'){
-            document.cookie = 'opt-in=yes; expires=session';
+            document.cookie = 'opt-in=yes; expires=Sept 27, 2020 08:00:00';
             url = '/webinar.html';
         }
         window.location = url;
