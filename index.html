@@ -25,18 +25,15 @@
     let timedifference = finalDate - now;
 
     const queryString = window.location.search;
-    console.log(queryString);
 
-    const urlParams = new URLSearchParams(queryString)
-    const admin = urlParams.get('admin')
-    console.log(admin);
+    const urlParams = new URLSearchParams(queryString);
+    const admin = urlParams.get('admin');
 
     if(admin !== 'test') {
         if(timedifference > 0){
             window.location = '/register.html'
         }
 
-        var cookies = document.cookie;
         var cookie = getCookie('opt-in');
         if(cookie === 'yes') {
             window.location = '/webinar.html';
