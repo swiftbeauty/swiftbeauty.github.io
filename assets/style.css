@@ -2,52 +2,56 @@ html {
     font-size: 13px;
 }
 
-@font-face {
-  font-family: "Gotham 300";
-  src: url("fonts/Gotham-Light.eot");
-  src: url("fonts/Gotham-Light.eot?#iefix") format("embedded-opentype");
-  src: url("fonts/Gotham-Light.woff2") format("woff2");
-  src: url("fonts/Gotham-Light.woff") format("woff");
-  src: url("fonts/Gotham-Light.ttf") format("truetype");
-  src: url("fonts/Gotham-Light.svg#Gotham-Light") format("svg");
-  font-weight: 300;
-  font-style: normal;
+* {
+    box-sizing: border-box;
 }
 
 @font-face {
-  font-family: "Gotham 400";
-  src: url("fonts/Gotham-Book.eot");
-  src:
-    url("fonts/Gotham-Book.eot?#iefix") format("embedded-opentype"),
-    url("fonts/Gotham-Book.woff2") format("woff2"),
-    url("fonts/Gotham-Book.woff") format("woff"),
-    url("fonts/Gotham-Book.ttf") format("truetype"),
-    url("fonts/Gotham-Book.svg#Gotham-Book") format("svg");
-  font-weight: 400;
-  font-style: normal;
+    font-family: "Gotham 300";
+    src: url("fonts/Gotham-Light.eot");
+    src: url("fonts/Gotham-Light.eot?#iefix") format("embedded-opentype");
+    src: url("fonts/Gotham-Light.woff2") format("woff2");
+    src: url("fonts/Gotham-Light.woff") format("woff");
+    src: url("fonts/Gotham-Light.ttf") format("truetype");
+    src: url("fonts/Gotham-Light.svg#Gotham-Light") format("svg");
+    font-weight: 300;
+    font-style: normal;
 }
 
 @font-face {
-  font-family: "Gotham 500";
-  src: url("fonts/Gotham-Medium.eot");
-  src:
-    url("fonts/Gotham-Medium.eot?#iefix") format("embedded-opentype"),
-    url("fonts/Gotham-Medium.woff2") format("woff2"),
-    url("fonts/Gotham-Medium.woff") format("woff"),
-    url("fonts/Gotham-Medium.ttf") format("truetype"),
-    url("fonts/Gotham-Medium.svg#Gotham-Medium") format("svg");
-  font-weight: 500;
-  font-style: normal;
+    font-family: "Gotham 400";
+    src: url("fonts/Gotham-Book.eot");
+    src:
+            url("fonts/Gotham-Book.eot?#iefix") format("embedded-opentype"),
+            url("fonts/Gotham-Book.woff2") format("woff2"),
+            url("fonts/Gotham-Book.woff") format("woff"),
+            url("fonts/Gotham-Book.ttf") format("truetype"),
+            url("fonts/Gotham-Book.svg#Gotham-Book") format("svg");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Gotham 500";
+    src: url("fonts/Gotham-Medium.eot");
+    src:
+            url("fonts/Gotham-Medium.eot?#iefix") format("embedded-opentype"),
+            url("fonts/Gotham-Medium.woff2") format("woff2"),
+            url("fonts/Gotham-Medium.woff") format("woff"),
+            url("fonts/Gotham-Medium.ttf") format("truetype"),
+            url("fonts/Gotham-Medium.svg#Gotham-Medium") format("svg");
+    font-weight: 500;
+    font-style: normal;
 }
 
 @font-face{
-        font-family:"Optima LT W05 Roman";
-        src: url("fonts/e843ecbd-4830-44a4-a280-c2500c9d3fdb.woff2") format("woff2");
-        src: url("fonts/fc030506-195b-41d1-b305-50c3a5ebd5a2.woff") format("woff");
+    font-family:"Optima LT W05 Roman";
+    src: url("fonts/e843ecbd-4830-44a4-a280-c2500c9d3fdb.woff2") format("woff2");
+    src: url("fonts/fc030506-195b-41d1-b305-50c3a5ebd5a2.woff") format("woff");
 }
 
 body {
-    background: radial-gradient(circle, rgba(83,127,197,1) 0%, rgba(33,68,136,1) 100%); 
+    background: radial-gradient(circle, rgba(83,127,197,1) 0%, rgba(33,68,136,1) 100%);
     color: white;
     font-family: "Gotham", sans-serif;
     font-weight: 300;
@@ -132,9 +136,9 @@ body {
 .countdown > div {
     min-width: 2em;
 }
-    .countdown > div:first-child {
-        border: none;
-    }
+.countdown > div:first-child {
+    border: none;
+}
 
 .countdown span {
     margin-bottom: 0;
@@ -240,7 +244,7 @@ body {
 }
 
 div.mce_inline_error {
-     display: none !important;
+    display: none !important;
 }
 
 .form__register:hover {
@@ -295,4 +299,131 @@ div.mce_inline_error {
 .my-1 {
     margin-top: 1.4em;
     margin-bottom: 8px;
+}
+
+.form-radio-options {
+    display: flex;
+    justify-content: center;
+    padding: 2rem 0 3rem;
+}
+
+.form-radio {
+    padding: 0.5rem 1.9rem;
+}
+
+.disclaimer {
+    text-align: center;
+}
+
+
+/*CHECKBOXES*/
+input[type="radio"] {
+    position: relative;
+    width: 2em;
+    height: 2em;
+    color: #363839;
+    border: 1px solid #ffffff;
+    border-radius: 0;
+    appearance: none;
+    outline: 0;
+    cursor: pointer;
+    transition: background 175ms cubic-bezier(0.1, 0.1, 0.25, 1);
+}
+input[type="radio"]::before {
+    position: absolute;
+    content: '';
+    display: block;
+    top: 2px;
+    left: 7px;
+    width: 8px;
+    height: 14px;
+    border-style: solid;
+    border-color: #fff;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+    opacity: 0;
+}
+input[type="radio"]:checked {
+    color: #fff;
+    border-color: #ffffff;
+    background: transparent;
+}
+input[type="radio"]:checked::before {
+    opacity: 1;
+}
+input[type="radio"]:checked ~ label::before {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+.form-radio-options label {
+    position: relative;
+    cursor: pointer;
+    /*font-size: 1.5em;*/
+    line-height: 2rem;
+    vertical-align: top;
+    padding: 0 0.25em 0;
+    user-select: none;
+}
+.form-radio-options label::before {
+    position: absolute;
+    content: attr(data-content);
+    color: #ffffff;
+    clip-path: polygon(0 0, 0 0, 0% 100%, 0 100%);
+    transition: clip-path 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.thank-you {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    max-width: 670px;
+    margin: auto;
+}
+
+.live-stream {
+    padding: 5rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.live-stream .stream-wrap {
+    position: relative;
+    flex-grow: 1;
+}
+
+.live-stream .stream-wrap iframe{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
+.actions-wrap {
+    padding-top: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.actions-wrap .logo img {
+    max-width: 200px;
+    height: auto;
+}
+
+.intercom-launcher::before,
+.intercom-launcher-frame::before {
+    content: 'ASK A QUESTION';
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    transform: translateY(-50%);
+    white-space: nowrap;
+    margin-right: 10px;
+    font-size: 1.3rem;
+    letter-spacing: 4px;
 }
