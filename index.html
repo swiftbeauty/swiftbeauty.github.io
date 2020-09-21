@@ -19,12 +19,30 @@
         window.location.protocol = "https";
     }
 
-    var cookies = document.cookie;
-    var cookie = getCookie('opt-in');
-    if(cookie === 'yes') {
-        window.location = '/webinar.html';
-    } else if(cookie === 'no') {
-        // window.location = '/thank-you.html';
+    const finalDate = new Date("Sept 26, 2020 11:00:00").getTime();
+    // const finalDate = new Date("Sept 21, 2020 14:45:00").getTime();
+    const now = new Date().getTime();
+    let timedifference = finalDate - now;
+
+    const queryString = window.location.search;
+    console.log(queryString);
+
+    const urlParams = new URLSearchParams(queryString)
+    const admin = urlParams.get('admin')
+    console.log(admin);
+
+    if(admin !== 'test') {
+        if(timedifference > 0){
+            window.location = '/register.html'
+        }
+
+        var cookies = document.cookie;
+        var cookie = getCookie('opt-in');
+        if(cookie === 'yes') {
+            window.location = '/webinar.html';
+        } else if(cookie === 'no') {
+            // window.location = '/thank-you.html';
+        }
     }
 
 </script>
