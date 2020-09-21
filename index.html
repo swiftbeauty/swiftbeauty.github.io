@@ -161,16 +161,6 @@
     //
     // }, 1000);
 
-    $(document).ready(function (){
-        $('#mce-success-response').on('show', function (){
-           alert('vu !');
-        });
-        $('#mce-error-response').on('change', function (){
-           alert('vu aussi!');
-        });
-    });
-
-
     var observer = new MutationObserver(function(mutations) {
         var radio = $('input[name="group[36740]"]:checked').val();
         var url = '/thank-you.html'

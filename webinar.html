@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="/assets/style.css">
     <link rel="stylesheet" href="/assets/helper.css">
     <title>Allergan Webinar - Live stream</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
@@ -21,15 +23,26 @@
 
     <div class="live-stream">
         <div class="stream-wrap">
-            <iframe src="https://www.youtube.com/embed/FUnJzFT2i84?autoplay=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen ></iframe>
+            <iframe src="https://player.vimeo.com/video/460262602" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
         </div>
         <div class="actions-wrap">
-            <div class="logo">TOTO</div>
-            <div class="chat">TATA</div>
+            <div class="logo">
+                <img src="/assets/allergan-logo.png" alt="Allergan">
+            </div>
+            <div class="chat">
+                <script>
+                    // We pre-filled your app ID in the widget URL: 'https://widget.intercom.io/widget/vcmi9osx'
+                    (function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',w.intercomSettings);}else{var d=document;var i=function(){i.c(arguments);};i.q=[];i.c=function(args){i.q.push(args);};w.Intercom=i;var l=function(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/vcmi9osx';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);};if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})();
+                </script>
+            </div>
         </div>
     </div>
 </div>
-
+<script>
+    window.intercomSettings = {
+        app_id: "vcmi9osx"
+    };
+</script>
 </body>
 
 </html>

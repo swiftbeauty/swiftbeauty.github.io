@@ -339,6 +339,25 @@ input[type="radio"]:checked ~ label::before {
     height: 100%;
 }
 .actions-wrap {
+    padding-top: 25px;
     display: flex;
     justify-content: space-between;
+}
+
+.actions-wrap .logo img {
+    max-width: 200px;
+    height: auto;
+}
+
+.intercom-launcher::before,
+.intercom-launcher-frame::before {
+    content: 'ASK A QUESTION';
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    transform: translateY(-50%);
+    white-space: nowrap;
+    margin-right: 10px;
+    font-size: 1.3rem;
+    letter-spacing: 4px;
 }
