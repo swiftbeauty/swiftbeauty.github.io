@@ -56,11 +56,23 @@ body {
     font-family: "Gotham", sans-serif;
     font-weight: 300;
     text-align: center;
-    overflow: scroll;
     height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+html.webinar {
+    width: 90%;
+    max-width: 1095px;
+    margin: 0 auto;
+}
+
+html.webinar body {
+    display: block;
+    position: relative !important;
+    width: 100%;
+    height: 100vh;
 }
 
 .container {
@@ -388,11 +400,19 @@ input[type="radio"]:checked ~ label::before {
     flex-direction: column;
     width: 100%;
     height: 100%;
+    justify-content: center;
+}
+
+@media all and (max-width: 767px) {
+    .live-stream {
+        padding: 5rem 1rem;
+    }
 }
 
 .live-stream .stream-wrap {
     position: relative;
-    flex-grow: 1;
+    /*flex-grow: 1;*/
+    margin-bottom: 3rem;
 }
 
 .live-stream .stream-wrap iframe{
@@ -404,7 +424,20 @@ input[type="radio"]:checked ~ label::before {
     width: 100%;
     height: 100%;
 }
+
+@media all and (max-width: 450px) {
+    .live-stream .stream-wrap iframe{
+        height: auto;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+
+
 .actions-wrap {
+    position: absolute;
+    left: 5rem;
+    bottom: 1.5rem;
     padding-top: 25px;
     display: flex;
     justify-content: space-between;
@@ -421,15 +454,29 @@ input[type="radio"]:checked ~ label::before {
     height: auto;
 }
 
-#Smallchat iframe::before,
-.intercom-launcher-frame::before {
-    content: 'ASK A QUESTION';
-    position: absolute;
-    top: 50%;
-    right: 100%;
-    transform: translateY(-50%);
-    white-space: nowrap;
-    margin-right: 10px;
-    font-size: 1.3rem;
-    letter-spacing: 4px;
+#Smallchat iframe {
+    position: absolute !important;
+    right: 3rem !important;
+}
+
+@media all and (max-width: 450px) {
+    #Smallchat iframe {
+        right: 50% !important;
+        transform: translateX(50%);
+        width: 185px;
+    }
+    .actions-wrap {
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 65px;
+    }
+}
+@media all and (min-width: 451px) and (max-width: 767px) {
+    #Smallchat iframe {
+        right: 0 !important;
+    }
+
+    .actions-wrap {
+        left: 1rem;
+    }
 }
