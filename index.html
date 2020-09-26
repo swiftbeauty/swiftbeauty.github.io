@@ -29,6 +29,10 @@
     const urlParams = new URLSearchParams(queryString);
     const admin = urlParams.get('admin');
 
+        if(timedifference > 0){
+            window.location = '/register.html'
+        }
+
         var cookie = getCookie('opt-in');
         if(cookie === 'yes') {
             window.location = '/webinar.html';
